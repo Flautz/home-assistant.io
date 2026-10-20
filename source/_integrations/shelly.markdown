@@ -454,6 +454,10 @@ The first will allow specifying a temperature, the second instead of a percentag
  will be disabled.
 As soon as you change the temperature, it gets enabled again.
 
+## Shelly BLU TRV schedules
+
+Shelly BLU TRV thermostats store their heating schedule on the device, so it keeps working when Home Assistant or the network is unavailable. To read or change the schedule, use the [**Get schedule**](/actions/shelly.get_schedule/) and [**Set schedule**](/actions/shelly.set_schedule/) actions on the climate entity of the TRV.
+
 ## Shelly Gas with Valve add-on
 
 If you have the Valve add-on connected to Shelly Gas, the integration will create two entities for the valve. The `valve` entity allows you to control the valve, the `sensor` entity shows exact states of the valve.
